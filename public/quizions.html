@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Interactive Personality Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
+
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts-quizions/material-design-iconic-font/css/material-design-iconic-font.css">
+
+	<!-- DATE-PICKER -->
+	<link rel="stylesheet" href="vendor-quizions/date-picker/css/datepicker.min.css">
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css-quizions/style.css">
+	<link rel="stylesheet" href="css-quizions/style-button-leng.css">
+	<link rel="stylesheet" href="css-quizions/style-pin.css">
+
+	<!-- favicon -->
+	<link rel="icon" sizes="192x192" href="images/unicorn.png">
+
+</head>
+
+<body class="en">
+	<div class="wrapper" style="margin-top: -35px;">
+		<!-- <form action="" style="margin-top: -10rem;"> -->
+		<form action="">
+			<div class="form-header">
+				<a id="percent">#MBTI</a>
+				<h3>Myers Personality Test</h3>
+				<h5 id="warn"></h5>
+			</div>
+
+			<div id="wizard">
+
+				<div class="checkbox">
+					<input type="checkbox" id="check_01">
+					<!-- onclick="document.body.className='th'" name="langn" value="th" -->
+					<label for="check_01"></label>
+				</div>
+
+				<!-- SECTION 1 -->
+				<h4></h4>
+				<section>
+
+					<div class="checkbox-circle">
+						<h4 id="Q01">1) When you are with a group of people, would you usually rather?</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q1" value="a" id="A1">
+									<h5 id="A01">Join in the talk of the group</h5><br>
+									<span class="checkmark"></span>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q1" value="b" id="B1">
+									<h5 id="B01">Talk individually with people you know well</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q02">2) Do you usually get along better with . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q2" value="a" id="A2">
+									<h5 id="A02">Realistic people</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class="d">
+									<input type="radio" name="q2" value="b" id="B2">
+									<h5 id="B02">Imaginative people</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle" id="Q3">
+						<h4 id="Q03">3) Which word in the pair appeals to you more?</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q3" value="a" id="A3">
+									<h5 id="A03">Analyze</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q3" value="b" id="B3">
+									<h5 id="B03">Sympathize</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="form__group field">
+						<input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+						<label for="name" class="form__label">GROUP NAME</label>
+					  </div> -->
+				</section>
+
+				<!-- SECTION 3 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q04">4) Does following a schedule . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q4" value="a" id="A4">
+									<h5 id="A04">Appeal to you</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q4" value="b" id="B4">
+									<h5 id="B04">Cramp you</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q05">5) When you have to meet strangers, do you find it . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q5" value="a" id="A5">
+									<h5 id="A05">Pleasant, or at lease easy</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q5" value="b" id="B5">
+									<h5 id="B05">Something that takes a good deal of
+										effort</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q06">6) If you were a teacher, would you rather teach . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q6" value="a" id="A6">
+									<h5 id="A06">Fact courses</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q6" value="b" id="B6">
+									<h5 id="B06">Courses involving theory</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SECTION 3 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q07">7) Which word in the pair appeals to you more?</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q7" value="a" id="A7">
+									<h5 id="A07">Foresight</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q7" value="b" id="B7">
+									<h5 id="B07">Compassion</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q08">8) Do you prefer to . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q8" value="a" id="A8">
+									<h5 id="A08">Arrange dates, parties, etc., well in advance</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q8" value="b" id="B8">
+									<h5 id="B08">Be free to do whatever looks like
+										fun when the time comes</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q09">9) Are you . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q9" value="a" id="A9">
+									<h5 id="A09">Easy to get to know</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q9" value="b" id="B9">
+									<h5 id="B09">Hard to get to know</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SECTION 4 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q010">10) Is it higher praise to say someone has . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q10" value="a" id="A10">
+									<h5 id="A010">Common sense</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q10" value="b" id="B10">
+									<h5 id="B010">Vision</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q011">11) Which word in the pair appeals to you more?</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q11" value="a" id="A11">
+									<h5 id="A011">Firm</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q11" value="b" id="B11">
+									<h5 id="B011">Gentle</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q012">12) Does the idea of making a list of what you should get done over a weekend . .
+							.</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q12" value="a" id="A12">
+									<h5 id="A012">Appeal to you</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q12" value="b" id="B12">
+									<h5 id="B012">Leave you cold</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SECTION 5 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q013">13) Do you tend to have . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q13" value="a" id="A13">
+									<h5 id="A013">Broad friendships with many different people</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q13" value="b" id="B13">
+									<h5 id="B013">Deep friendships with a very few people</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q014">14) Would you rather have as a friend someone who . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q14" value="a" id="A14">
+									<h5 id="A014">Has both feet on the ground</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q14" value="b" id="B14">
+									<h5 id="B014">Is always coming up with new
+										ideas</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q015">15) Which word in the pair appeals to you more?</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q15" value="a" id="A15">
+									<h5 id="A015">Thinking</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q15" value="b" id="B15">
+									<h5 id="B015">Feeling</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SECTION 6 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q016">16) When it is settled well in advance that you will do a certain thing at a
+							certain time, do you find it . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q16" value="a" id="A16">
+									<h5 id="A016">Nice to be able to plan
+										accordingly</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q16" value="b" id="B16">
+									<h5 id="B016">A little unpleasant to be tied
+										down</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q017">17) At parties, do you . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q17" value="a" id="A17">
+									<h5 id="A017">Always have fun</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q17" value="b" id="B17">
+									<h5 id="B017">Sometimes get bored</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q018">18) Would you rather be considered . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q18" value="a" id="A18">
+									<h5 id="A018">A practical person</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q18" value="b" id="B18">
+									<h5 id="B018">An ingenious person</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- SECTION 7 -->
+				<h4></h4>
+				<section>
+					<div class="checkbox-circle">
+						<h4 id="Q019">19) Is it a higher compliment to be called . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q19" value="a" id="A19">
+									<h5 id="A019">A consistently reasonable
+										person</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q19" value="b" id="B19">
+									<h5 id="B019">A person of real feeling</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div><br>
+					<div class="checkbox-circle">
+						<h4 id="Q020">20) Is it harder for you to adapt to . . .</h4>
+						<ul>
+							<li>
+								<label>
+									<input type="radio" name="q20" value="a" id="A20">
+									<h5 id="A020">Constant change</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="q20" value="b" id="B20">
+									<h5 id="B020">Routine</h5><br>
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="form__group field">
+						<input type="input" class="form__field" placeholder="Name" name="name"
+							id='idGroup' required />
+						<label for="name" class="form__label">Enter PIN</label>
+					</div>
+				</section>
+			</div>
+		</form>
+	</div>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+	<script src="js-quizions/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- JQUERY STEP -->
+	<script src="js-quizions/jquery.steps.js"></script>
+
+	<!-- DATE-PICKER -->
+	<script src="vendor-quizions/date-picker/js/datepicker.js"></script>
+	<script src="vendor-quizions/date-picker/js/datepicker.en.js"></script>
+
+	<script src="js-quizions/main.js"></script>
+	<!-- Template created and distributed by Colorlib -->
+</body>
+
+</html>
